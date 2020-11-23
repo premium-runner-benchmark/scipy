@@ -10,8 +10,8 @@ on:
 jobs:
   test_nightly:
 
-    if: "github.repository == 'scipy/scipy' && !contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[skip github]')"
-    runs-on: ubuntu-latest
+    #if: "github.repository == 'scipy/scipy' && !contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[skip github]')"
+    runs-on: [f64s]
     strategy:
       matrix:
         python-version: [3.9]
